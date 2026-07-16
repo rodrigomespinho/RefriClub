@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7f9;
+    color: #222;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+header {
+
+    height: 85px;
+    padding: 0 8%;
+
+    background: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+.logo {
+
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+
+}
+
+
+.logo span {
+
+    color: #EA3D41;
+
+}
+
+
+nav {
+
+    display: flex;
+    gap: 35px;
+
+}
+
+
+nav a {
+
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: .3s;
+
+}
+
+
+nav a:hover {
+
+    color: #EA3D41;
+
+}
+
+
+/* HERO */
+
+
+.hero {
+
+    padding: 80px 8%;
+    text-align: center;
+
+}
+
+
+.hero span {
+
+    color: #EA3D41;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+
+.hero h1 {
+
+    max-width: 900px;
+
+    margin: 25px auto;
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+}
+
+
+.hero p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+
+/* PROJETO */
+
+
+.projeto {
+
+    width: min(1100px, 85%);
+
+    margin: auto;
+
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+
+}
+
+
+.texto h2,
+.dev h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.texto p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.tecnologias {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+}
+
+
+.tecnologias div {
+
+    padding: 25px;
+
+    background: #f7f7f7;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+}
+
+
+.tecnologias strong {
+
+    display: block;
+
+    color: #EA3D41;
+
+    font-size: 25px;
+
+}
+
+
+.tecnologias span {
+
+    color: #777;
+
+}
+
+
+
+/* DESENVOLVEDOR */
+
+
+.dev {
+
+    padding: 80px 8%;
+
+    text-align: center;
+
+}
+
+
+.card {
+
+    background: white;
+
+    width: min(450px, 100%);
+
+    margin: auto;
+
+    padding: 45px 35px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+
+}
+
+
+
+/* FOTO */
+
+
+.foto {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #000000;
+
+}
+
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.card h3 {
+    margin: 25px 0 15px;
+    font-size: 30px;
+
+}
+
+
+
+.card p {
+    color: #666;
+    line-height: 1.7;
+
+}
+
+
+
+/* CONTATOS */
+
+
+.contatos {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+
+.contatos a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    transition: .3s;
+
+}
+
+
+.contatos a:hover {
+    color: #7e4647;
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+    padding: 35px;
+    background: white;
+    text-align: center;
+    color: #777;
+}
+
+
+
+
+/* RESPONSIVO */
+
+
+@media (max-width:900px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 34px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .projeto {
+        padding: 30px;
+    }
+
+    .tecnologias {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media(max-width:500px) {
+
+
+    .hero {
+
+        padding: 60px 5%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+
+    .projeto {
+
+        width: 90%;
+
+        padding: 25px;
+
+    }
+
+
+    .foto {
+
+        width: 120px;
+
+        height: 120px;
+
+    }
+
+
+    .card h3 {
+
+        font-size: 24px;
+
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
