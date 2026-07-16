@@ -1,6 +1,7 @@
 # 🥤 RefriClub
 
 Projeto desenvolvido para praticar HTML, CSS e JavaScript.
+https://refriclube.netlify.app/
 
 ## Funcionalidades
 
